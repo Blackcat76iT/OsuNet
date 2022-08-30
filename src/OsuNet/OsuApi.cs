@@ -37,7 +37,7 @@ namespace OsuNet {
             }
         }
 
-        public Beatmap[] GetBeatmap(GetBeatmapsOptions options) {
+        public Beatmap[] GetBeatmap(GetBeatmapOptions options) {
             string url = "https://osu.ppy.sh/api/get_beatmaps";
             Dictionary<string, string> query = new Dictionary<string, string>() {
                 { "k", AccessToken },
