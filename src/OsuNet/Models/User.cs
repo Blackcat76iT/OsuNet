@@ -68,5 +68,8 @@ namespace OsuNet.Models {
 
         [JsonProperty("events")]
         public EventInfo[] Events;
+
+        public string GetAvatar()
+            => $"http://s.ppy.sh/a/{UserId}";
     }
 }

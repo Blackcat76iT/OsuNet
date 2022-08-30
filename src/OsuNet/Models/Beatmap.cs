@@ -128,5 +128,11 @@ namespace OsuNet.Models {
 
         [JsonProperty("difficultyrating")]
         public double DiffecultyRating { get; set; }
+
+        public string GetCover()
+            => $"https://assets.ppy.sh/beatmaps/{BeatmapSetId}/covers/cover.jpg";
+
+        public string GetThumbnail()
+            => $"https://b.ppy.sh/thumb/{BeatmapSetId}l.jpg";
     }
 }
