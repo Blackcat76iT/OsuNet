@@ -5,7 +5,7 @@ namespace OsuNet.Abstractions {
     public interface IOsuApi {
         string AccessToken { get; set; }
 
-        Beatmap[] GetBeatmap(GetBeatmapsOptions options);
+        Beatmap[] GetBeatmap(GetBeatmapOptions options);
         User[] GetUser(GetUserOptions options);
         Scores[] GetScore(GetScoresOptions options);
         UserBest[] GetUserBest(GetUserBestOptions options);
