@@ -4,12 +4,33 @@
     <TargetFramework>net6.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
+    <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+    <PackageIcon>OsuNet.png</PackageIcon>
+    <PackageProjectUrl>https://github.com/Blackcat76iT/OsuNet</PackageProjectUrl>
+    <Copyright>Blackcat76iT</Copyright>
+    <Description>Library for the Osu!API v1</Description>
+    <RepositoryUrl>https://github.com/Blackcat76iT/OsuNet</RepositoryUrl>
+    <PackageTags>Osu; Osu!API; OsuNet</PackageTags>
+    <PackageRequireLicenseAcceptance>True</PackageRequireLicenseAcceptance>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <PackageReadmeFile></PackageReadmeFile>
+    <NeutralLanguage>en</NeutralLanguage>
+    <Authors>Blackcat76iT</Authors>
+    <RepositoryType>git</RepositoryType>
+    <Company />
   </PropertyGroup>
 
   <ItemGroup>
     <Compile Remove="Новая папка1\**" />
     <EmbeddedResource Remove="Новая папка1\**" />
     <None Remove="Новая папка1\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="..\..\..\..\Загрузки\OsuNet.png">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
   </ItemGroup>
 
   <ItemGroup>
