@@ -2,7 +2,6 @@
 OsuNet is a library for the [Osu!API v1](https://github.com/ppy/osu-api/wiki)
 
 ## Installation
-NuGet:
 ```
 PM> Install-Package OsuNet
 ```
@@ -22,6 +21,7 @@ public class Program {
 
     static void Main(string[] args) {
         Console.WriteLine(GetBeatmap(3713514).Title);
+        Console.WriteLine(GetBeatmap(3713514).GetThumbnail()) // Returns a reference to the thumbnail beatmap
     }
 
     public static Beatmap GetBeatmap(ulong id) {
@@ -34,7 +34,7 @@ public class Program {
 }
 ```
 ## License
-[MIT license](LICENS)
+[MIT license](LICENSE)
 
 ## Additionally
 [![.NET](https://github.com/Blackcat76iT/OsuNet/actions/workflows/dotnet.yml/badge.svg)](https://github.com/Blackcat76iT/OsuNet/actions/workflows/dotnet.yml)
