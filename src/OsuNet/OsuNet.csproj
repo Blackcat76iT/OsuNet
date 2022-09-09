@@ -27,13 +27,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <None Include="..\..\..\..\Загрузки\OsuNet.png">
-      <Pack>True</Pack>
-      <PackagePath>\</PackagePath>
-    </None>
-  </ItemGroup>
-
-  <ItemGroup>
     <PackageReference Include="Newtonsoft.Json" Version="13.0.1" />
   </ItemGroup>
 
