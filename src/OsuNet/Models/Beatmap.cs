@@ -129,9 +129,17 @@ namespace OsuNet.Models {
         [JsonProperty("difficultyrating")]
         public double DiffecultyRating { get; set; }
 
+        /// <summary>
+        /// Gets the cover URL for this Beatmap.
+        /// </summary>
+        /// <returns>A string representing the beatmaps cover URL</returns>
         public string GetCover()
             => $"https://assets.ppy.sh/beatmaps/{BeatmapSetId}/covers/cover.jpg";
 
+        /// <summary>
+        /// Gets the thumbnail URL for this Beatmap.
+        /// </summary>
+        /// <returns>A string representing the beatmaps thumbnail URL</returns>
         public string GetThumbnail()
             => $"https://b.ppy.sh/thumb/{BeatmapSetId}l.jpg";
     }

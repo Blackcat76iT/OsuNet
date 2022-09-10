@@ -15,6 +15,9 @@ namespace OsuNet.Models.Info {
         [JsonProperty("score")]
         public ulong Score { get; set; }
 
+        /// <summary>
+        /// The number of maximum combos that the player has hit.
+        /// </summary>
         [JsonProperty("maxcombo")]
         public ulong MaxCombo { get; set; }
 
@@ -39,9 +42,15 @@ namespace OsuNet.Models.Info {
         [JsonProperty("countkatu")]
         public ulong CountKatu { get; set; }
 
+        /// <summary>
+        /// True if score is perfect, false otherwise.
+        /// </summary>
         [JsonProperty("perfect")]
         public bool Perfect { get; set; }
 
+        /// <summary>
+        /// True if the player hasn't lost all their lives, otherwise false.
+        /// </summary>
         [JsonProperty("pass")]
         public bool Pass { get; set; }
 

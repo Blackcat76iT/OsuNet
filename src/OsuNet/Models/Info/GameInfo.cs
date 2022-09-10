@@ -6,9 +6,15 @@ namespace OsuNet.Models.Info {
         [JsonProperty("game_id")]
         public ulong GameId { get; set; }
 
+        /// <summary>
+        /// Date and time the game started.
+        /// </summary>
         [JsonProperty("start_time")]
         public DateTime StartTime { get; set; }
 
+        /// <summary>
+        /// Date and time the game ended.
+        /// </summary>
         [JsonProperty("end_time")]
         public DateTime? EndTime { get; set; }
 

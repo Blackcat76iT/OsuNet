@@ -12,6 +12,9 @@ namespace OsuNet.Models {
         [JsonProperty("score")]
         public ulong Score { get; set; }
 
+        /// <summary>
+        /// The number of maximum combos that the player has hit.
+        /// </summary>
         [JsonProperty("maxcombo")]
         public ulong MaxCombo { get; set; }
 
@@ -33,6 +36,9 @@ namespace OsuNet.Models {
         [JsonProperty("countgeki")]
         public ulong CountGeki { get; set; }
 
+        /// <summary>
+        /// True if score is perfect, false otherwise.
+        /// </summary>
         [JsonProperty("perfect")]
         public bool Perfect { get; set; }
 
@@ -42,6 +48,9 @@ namespace OsuNet.Models {
         [JsonProperty("user_id")]
         public ulong UserId { get; set; }
 
+        /// <summary>
+        /// Date and time the record was set.
+        /// </summary>
         [JsonProperty("date")]
         public DateTime DateTime { get; set; }
 

@@ -1,6 +1,10 @@
 ﻿using OsuNet.Enums;
 
 namespace OsuNet.Models.Options {
+    /// <summary>
+    /// BeatmapId is a required option.
+    /// NOT BeatmapSetId
+    /// </summary>
     public class GetScoresOptions {
         public ulong? BeatmapId { get; set; }
         public string User { get; set; }

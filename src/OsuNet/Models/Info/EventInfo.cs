@@ -14,6 +14,9 @@ namespace OsuNet.Models.Info {
         [JsonProperty("date")]
         public DateTime DateTime { get; set; }
 
+        /// <summary>
+        /// How "epic" this event is (between 1 and 32).
+        /// </summary>
         [JsonProperty("epicfactor")]
         public byte EpicFactor { get; set; }
     }
