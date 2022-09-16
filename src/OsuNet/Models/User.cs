@@ -3,9 +3,15 @@ using OsuNet.Models.Info;
 
 namespace OsuNet.Models {
     public class User {
+        /// <summary>
+        /// Unique user ID.
+        /// </summary>
         [JsonProperty("user_id")]
         public ulong UserId { get; set; }
 
+        /// <summary>
+        /// Nickname of this player.
+        /// </summary>
         [JsonProperty("username")]
         public string Username { get; set; }
 
@@ -15,12 +21,21 @@ namespace OsuNet.Models {
         [JsonProperty("join_date")]
         public DateTime JoinDate { get; set; }
 
+        /// <summary>
+        /// The number of 300 points that the player has accumulated over the entire time.
+        /// </summary>
         [JsonProperty("count300")]
         public ulong Count300 { get; set; }
 
+        /// <summary>
+        /// The number of 100 points that the player has accumulated over the entire time.
+        /// </summary>
         [JsonProperty("count100")]
         public ulong Count100 { get; set; }
 
+        /// <summary>
+        /// The number of 50 points that the player has accumulated over the entire time.
+        /// </summary>
         [JsonProperty("count50")]
         public ulong Count50 { get; set; }
 
@@ -48,12 +63,21 @@ namespace OsuNet.Models {
         [JsonProperty("pp_rank")]
         public ulong PPRank { get; set; }
 
+        /// <summary>
+        /// This player's level.
+        /// </summary>
         [JsonProperty("level")]
         public double Level { get; set; }
 
+        /// <summary>
+        /// The number of PP that the player has accumulated over the entire time.
+        /// </summary>
         [JsonProperty("pp_raw")]
         public double PPRaw { get; set; }
 
+        /// <summary>
+        /// The accuracy of this player.
+        /// </summary>
         [JsonProperty("accuracy")]
         public double Accuracy { get; set; }
 
@@ -93,6 +117,9 @@ namespace OsuNet.Models {
         [JsonProperty("country")]
         public string Country { get; set; }
 
+        /// <summary>
+        /// The number of seconds played.
+        /// </summary>
         [JsonProperty("total_seconds_played")]
         public ulong TotalSecondsPlayed { get; set; }
 

@@ -3,15 +3,24 @@ using OsuNet.Enums;
 
 namespace OsuNet.Models {
     public class Beatmap {
+        /// <summary>
+        /// Unique beatmap SET ID. (Used to identify an album)
+        /// </summary>
         [JsonProperty("beatmapset_id")]
         public ulong BeatmapSetId { get; set; }
 
+        /// <summary>
+        /// Unique beatmap ID. (Used to identify the beatmap)
+        /// </summary>
         [JsonProperty("beatmap_id")]
         public ulong BeatmapId { get; set; }
 
         [JsonProperty("approved")]
         public ApproveStatus Approved { get; set; }
 
+        /// <summary>
+        /// The duration of the map in seconds.
+        /// </summary>
         [JsonProperty("total_length")]
         public ulong TotalLength { get; set; }
 

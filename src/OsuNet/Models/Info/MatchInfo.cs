@@ -2,6 +2,9 @@
 
 namespace OsuNet.Models.Info {
     public class MatchInfo {
+        /// <summary>
+        /// The unique ID of the match.
+        /// </summary>
         [JsonProperty("match_id")]
         public ulong MatchId { get; set; }
 
