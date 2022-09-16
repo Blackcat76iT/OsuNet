@@ -37,6 +37,11 @@ namespace OsuNet {
             }
         }
 
+        /// <summary>
+        /// Retrieve general beatmap information.
+        /// </summary>
+        /// <param name="options"></param>
+        /// <returns>Array of beatmap.</returns>
         public Beatmap[] GetBeatmap(GetBeatmapOptions options) {
             string url = "https://osu.ppy.sh/api/get_beatmaps";
             Dictionary<string, string> query = new Dictionary<string, string>() {
@@ -55,6 +60,11 @@ namespace OsuNet {
             return get<Beatmap[]>(url, query.Where(kv => kv.Value != null));
         }
 
+        /// <summary>
+        /// Retrieve general user information.
+        /// </summary>
+        /// <param name="options"></param>
+        /// <returns>Array of user.</returns>
         public User[] GetUser(GetUserOptions options) {
             string url = "https://osu.ppy.sh/api/get_user";
             Dictionary<string, string> query = new Dictionary<string, string>() {
@@ -67,6 +77,11 @@ namespace OsuNet {
             return get<User[]>(url, query.Where(kv => kv.Value != null));
         }
 
+        /// <summary>
+        /// Retrieve information about the top 100 scores of a specified beatmap.
+        /// </summary>
+        /// <param name="options"></param>
+        /// <returns>Array of scores.</returns>
         public Scores[] GetScore(GetScoresOptions options) {
             string url = "https://osu.ppy.sh/api/get_scores";
             Dictionary<string, string> query = new Dictionary<string, string>() {
@@ -81,6 +96,11 @@ namespace OsuNet {
             return get<Scores[]>(url, query.Where(kv => kv.Value != null));
         }
 
+        /// <summary>
+        /// Get the top scores for the specified user.
+        /// </summary>
+        /// <param name="options"></param>
+        /// <returns>Array of the user's best scores.</returns>
         public UserBest[] GetUserBest(GetUserBestOptions options) {
             string url = "https://osu.ppy.sh/api/get_user_best";
             Dictionary<string, string> query = new Dictionary<string, string>() {
@@ -93,6 +113,11 @@ namespace OsuNet {
             return get<UserBest[]>(url, query.Where(kv => kv.Value != null));
         }
 
+        /// <summary>
+        /// Gets the user's ten most recent plays over the last 24 hours.
+        /// </summary>
+        /// <param name="options"></param>
+        /// <returns>Array of the user's recent results.</returns>
         public UserRecent[] GetUserRecent(GetUserRecentOptions options) {
             string url = "https://osu.ppy.sh/api/get_user_recent";
             Dictionary<string, string> query = new Dictionary<string, string>() {
@@ -105,6 +130,11 @@ namespace OsuNet {
             return get<UserRecent[]>(url, query.Where(kv => kv.Value != null));
         }
 
+        /// <summary>
+        /// Retrieve information about a multiplayer match.
+        /// </summary>
+        /// <param name="options"></param>
+        /// <returns>Information about a multiplayer match.</returns>
         public Multiplayer GetMultiplayer(GetMultiplayerOptions options) {
             string url = "https://osu.ppy.sh/api/get_match";
             Dictionary<string, string> query = new Dictionary<string, string>() {
@@ -114,6 +144,12 @@ namespace OsuNet {
             return get<Multiplayer>(url, query.Where(kv => kv.Value != null));
         }
 
+        /// <summary>
+        /// Get the replay data of a user's score on a map.
+        /// You are only allowed to do 10 requests per minute.
+        /// </summary>
+        /// <param name="options"></param>
+        /// <returns>Replay data of a user's score on a map.</returns>
         public Replay GetReplay(GetReplayOptions options) {
             string url = "https://osu.ppy.sh/api/get_replay";
             Dictionary<string, string> query = new Dictionary<string, string>() {
