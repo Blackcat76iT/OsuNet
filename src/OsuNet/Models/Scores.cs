@@ -46,7 +46,7 @@ namespace OsuNet.Models {
         public ulong CountMiss { get; set; }
 
         /// <summary>
-        /// The number of maximum combos.
+        /// The number of maximum combos that the player has hit.
         /// </summary>
         [JsonProperty("maxcombo")]
         public ulong MaxCombo { get; set; }
