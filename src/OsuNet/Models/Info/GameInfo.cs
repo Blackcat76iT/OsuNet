@@ -2,6 +2,9 @@
 using OsuNet.Enums;
 
 namespace OsuNet.Models.Info {
+    /// <summary>
+    /// Get general information about the game.
+    /// </summary>
     public class GameInfo {
         /// <summary>
         /// Unique game ID.

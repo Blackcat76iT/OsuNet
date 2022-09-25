@@ -2,6 +2,9 @@
 using OsuNet.Models.Info;
 
 namespace OsuNet.Models {
+    /// <summary>
+    /// Retrieve information about a multiplayer match.
+    /// </summary>
     public class Multiplayer {
         /// <summary>
         /// Gets basic information about the match.

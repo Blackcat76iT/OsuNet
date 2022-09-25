@@ -2,6 +2,9 @@
 using OsuNet.Enums;
 
 namespace OsuNet.Models {
+    /// <summary>
+    /// Gets the user's ten most recent plays over the last 24 hours.
+    /// </summary>
     public class UserRecent {
         /// <summary>
         /// Unique beatmap ID.

@@ -2,6 +2,9 @@
 using OsuNet.Enums;
 
 namespace OsuNet.Models {
+    /// <summary>
+    /// Get the top scores for the specified user.
+    /// </summary>
     public class UserBest {
         /// <summary>
         /// Unique beatmap ID.

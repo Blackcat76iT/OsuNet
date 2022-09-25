@@ -2,6 +2,9 @@
 using OsuNet.Enums;
 
 namespace OsuNet.Models {
+    /// <summary>
+    /// Retrieve general beatmap information.
+    /// </summary>
     public class Beatmap {
         /// <summary>
         /// Unique beatmap SET ID. (Used to identify an album)
