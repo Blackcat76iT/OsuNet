@@ -2,6 +2,9 @@
 using OsuNet.Models.Info;
 
 namespace OsuNet.Models {
+    /// <summary>
+    /// Retrieve general user information.
+    /// </summary>
     public class User {
         /// <summary>
         /// Unique user ID.

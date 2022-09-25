@@ -2,6 +2,9 @@
 using OsuNet.Enums;
 
 namespace OsuNet.Models {
+    /// <summary>
+    /// Retrieve information about the top 100 scores of a specified beatmap.
+    /// </summary>
     public class Scores {
         /// <summary>
         /// Unique score ID.

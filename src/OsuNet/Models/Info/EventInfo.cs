@@ -1,6 +1,9 @@
 ﻿using Newtonsoft.Json;
 
 namespace OsuNet.Models.Info {
+    /// <summary>
+    /// Get information about events.
+    /// </summary>
     public class EventInfo {
         /// <summary>
         /// Event HTML code.

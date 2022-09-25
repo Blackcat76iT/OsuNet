@@ -1,6 +1,9 @@
 ﻿using Newtonsoft.Json;
 
 namespace OsuNet.Models.Info {
+    /// <summary>
+    /// Get general information about the match.
+    /// </summary>
     public class MatchInfo {
         /// <summary>
         /// The unique ID of the match.

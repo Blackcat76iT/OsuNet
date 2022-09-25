@@ -2,6 +2,9 @@
 using OsuNet.Enums;
 
 namespace OsuNet.Models.Info {
+    /// <summary>
+    /// Get general information about a user in a match.
+    /// </summary>
     public class ScoreInfo {
         /// <summary>
         /// Player slot number.
