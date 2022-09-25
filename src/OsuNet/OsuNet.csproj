@@ -3,13 +3,50 @@
   <PropertyGroup>
     <TargetFramework>net6.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
-    <Nullable>enable</Nullable>
+    <Nullable>annotations</Nullable>
+    <Version>1.1.3</Version>
+    <Authors>Blackcat76iT</Authors>
+    <Company>Blackcat76iT</Company>
+    <Copyright>Blackcat76iT</Copyright>
+    <Description>library for the Osu!API v1</Description>
+    <PackageProjectUrl>https://github.com/Blackcat76iT/OsuNet</PackageProjectUrl>
+    <PackageIcon>OsuNet.png</PackageIcon>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
+    <RepositoryUrl>https://github.com/Blackcat76iT/OsuNet</RepositoryUrl>
+    <RepositoryType>git</RepositoryType>
+    <PackageTags>osu; osu!api; osunet; api</PackageTags>
+    <NeutralLanguage>en-US</NeutralLanguage>
+    <PackageRequireLicenseAcceptance>True</PackageRequireLicenseAcceptance>
+    <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+    <GenerateDocumentationFile>True</GenerateDocumentationFile>
+    <SignAssembly>False</SignAssembly>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <Optimize>False</Optimize>
+    <DebugType>portable</DebugType>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+    <DebugType>portable</DebugType>
   </PropertyGroup>
 
   <ItemGroup>
     <Compile Remove="Новая папка1\**" />
     <EmbeddedResource Remove="Новая папка1\**" />
     <None Remove="Новая папка1\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="..\..\..\..\Загрузки\OsuNet.png">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+    <None Include="..\..\README.md">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
   </ItemGroup>
 
   <ItemGroup>
