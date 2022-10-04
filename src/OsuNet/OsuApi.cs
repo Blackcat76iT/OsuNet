@@ -88,7 +88,7 @@ namespace OsuNet {
                 { "k", AccessToken },
                 { "b", options.BeatmapId?.ToString() },
                 { "u", options.User },
-                { "m", ((int)options.Mode).ToString() },
+                { "m", ((int?)options.Mode).ToString() },
                 { "mods", options.Mods?.ToString() },
                 { "type", options.Type},
                 { "limit", options.Limit?.ToString() }
