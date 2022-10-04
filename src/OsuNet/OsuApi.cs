@@ -106,7 +106,7 @@ namespace OsuNet {
             Dictionary<string, string> query = new Dictionary<string, string>() {
                 { "k", AccessToken },
                 { "u", options.User },
-                { "m", ((int?)options.Mode)?.ToString() },
+                { "m", ((int)options.Mode)?.ToString() },
                 { "limit", options.Limit?.ToString() },
                 { "type", options.Type }
             };
