@@ -52,25 +52,25 @@ namespace OsuNet.Models {
         /// Circle size value. (CS)
         /// </summary>
         [JsonProperty("diff_size")]
-        public double DiffSize { get; set; }
+        public float DiffSize { get; set; }
 
         /// <summary>
         /// Overall difficulty. (OD)
         /// </summary>
         [JsonProperty("diff_overall")]
-        public double DiffOverall { get; set; }
+        public float DiffOverall { get; set; }
 
         /// <summary>
         /// Approach Rate. (AR)
         /// </summary>
         [JsonProperty("diff_approach")]
-        public double DiffApproach { get; set; }
+        public float DiffApproach { get; set; }
 
         /// <summary>
         /// Health drain. (HP)
         /// </summary>
         [JsonProperty("diff_drain")]
-        public double DiffDrain { get; set; }
+        public float DiffDrain { get; set; }
 
         /// <summary>
         /// Game mode.
@@ -151,7 +151,7 @@ namespace OsuNet.Models {
         public ulong CreatorId { get; set; }
 
         [JsonProperty("bpm")]
-        public double? BPM { get; set; }
+        public float? BPM { get; set; }
 
         [JsonProperty("source")]
         public string Source { get; set; }
@@ -181,7 +181,7 @@ namespace OsuNet.Models {
         public ulong FavouriteCount { get; set; }
 
         [JsonProperty("rating")]
-        public double Rating { get; set; }
+        public float Rating { get; set; }
 
         /// <summary>
         /// If this beatmap has a storyboard.
@@ -232,16 +232,16 @@ namespace OsuNet.Models {
         public ulong? MaxCombo { get; set; }
 
         [JsonProperty("diff_aim")]
-        public double? DiffAim { get; set; }
+        public float? DiffAim { get; set; }
 
         [JsonProperty("diff_speed")]
-        public double? DiffSpeed { get; set; }
+        public float? DiffSpeed { get; set; }
 
         /// <summary>
         /// The number of stars the map would have in-game and on the website.
         /// </summary>
         [JsonProperty("difficultyrating")]
-        public double DiffecultyRating { get; set; }
+        public float DiffecultyRating { get; set; }
 
         /// <summary>
         /// Gets the cover URL for this Beatmap.
