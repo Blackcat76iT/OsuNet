@@ -27,7 +27,7 @@ namespace OsuNet.Tests {
             Assert.AreEqual(beatmap.DiffSize, 7);
             Assert.AreEqual(beatmap.DiffOverall, 6);
             Assert.AreEqual(beatmap.DiffApproach, 5);
-            Assert.AreEqual(beatmap.DiffDrain, 6.9);
+            Assert.AreEqual(beatmap.DiffDrain, (float) 6.9);
             Assert.AreEqual(beatmap.Mode, BeatmapMode.OsuMania);
             Assert.AreEqual(beatmap.CountNormal, 2434);
             Assert.AreEqual(beatmap.CountSlider, 215);
@@ -58,7 +58,7 @@ namespace OsuNet.Tests {
             Assert.IsNull(beatmap.MaxCombo);
             Assert.IsNull(beatmap.DiffAim);
             Assert.IsNull(beatmap.DiffSpeed);
-            Assert.AreEqual(beatmap.DiffecultyRating, 6.90715);
+            Assert.AreEqual(beatmap.DiffecultyRating, (float) 6.90715);
         }
 
         [Test]
@@ -110,7 +110,7 @@ namespace OsuNet.Tests {
             Assert.AreEqual(score.UserId, 374950);
             Assert.AreEqual(score.DateTime, new DateTime(2022, 07, 29, 22, 06, 02));
             Assert.AreEqual(score.Rank, "XH");
-            Assert.AreEqual(score.PP, 102.289);
+            Assert.AreEqual(score.PP, (float) 102.289);
             Assert.IsTrue(score.ReplayAvailable);
         }
 
@@ -135,7 +135,7 @@ namespace OsuNet.Tests {
             Assert.AreEqual(userBest.UserId, 4504101);
             Assert.AreEqual(userBest.DateTime, new DateTime(2019, 10, 10, 19, 30, 20));
             Assert.AreEqual(userBest.Rank, "SH");
-            Assert.AreEqual(userBest.PP, 1076.33);
+            Assert.AreEqual(userBest.PP, (float) 1076.33);
             Assert.IsTrue(userBest.ReplayAvailable);
         }
 
