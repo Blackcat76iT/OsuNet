@@ -100,7 +100,7 @@ namespace OsuNet.Models {
         /// The number of PP that the player has hit.
         /// </summary>
         [JsonProperty("pp")]
-        public double PP { get; set; }
+        public float PP { get; set; }
 
         /// <summary>
         /// True if you can watch the replay, otherwise false.
