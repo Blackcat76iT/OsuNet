@@ -22,7 +22,7 @@ namespace OsuNet {
 							new OsuBoolConverter()
 						}
 					});
-                    return serializer.Deserialize<T>(jsonReader);
+					return serializer.Deserialize<T>(jsonReader);
 				}
 			}
 		}
