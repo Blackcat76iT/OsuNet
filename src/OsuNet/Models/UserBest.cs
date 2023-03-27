@@ -1,5 +1,4 @@
 ﻿using Newtonsoft.Json;
-using Newtonsoft.Json;
 using OsuNet.Enums;
 
 namespace OsuNet.Models {
