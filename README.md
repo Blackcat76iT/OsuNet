@@ -20,14 +20,14 @@ public class Program {
     private static readonly OsuApi api = new OsuApi("Your Token");
 
     static void Main(string[] args) {
-        Console.WriteLine(GetBeatmap(3713514).Title);
-        Console.WriteLine(GetBeatmap(3713514).GetThumbnail()) // Returns a reference to the thumbnail beatmap
+        Console.WriteLine(GetBeatmapAsync(3713514).Title);
+        Console.WriteLine(GetBeatmapAsync(3713514).GetThumbnail()) // Returns a reference to the thumbnail beatmap
     }
 
-    public static Beatmap GetBeatmap(ulong id) {
-        Beatmap beatmap = api.GetBeatmap(new GetBeatmapOptions() {
+    public static Beatmap GetBeatmapAsync(ulong id) {
+        Beatmap beatmap = (await api.GetBeatmapAsync(new GetBeatmapOptions() {
             BeatmapId = id
-        }).FirstOrDefault();
+        })).FirstOrDefault();
 
         return beatmap;
     }

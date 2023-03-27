@@ -70,19 +70,19 @@ namespace OsuNet.Models {
         /// This player's level.
         /// </summary>
         [JsonProperty("level")]
-        public double Level { get; set; }
+        public float Level { get; set; }
 
         /// <summary>
         /// The number of PP that the player has accumulated over the entire time.
         /// </summary>
         [JsonProperty("pp_raw")]
-        public double PPRaw { get; set; }
+        public float PPRaw { get; set; }
 
         /// <summary>
         /// The accuracy of this player.
         /// </summary>
         [JsonProperty("accuracy")]
-        public double Accuracy { get; set; }
+        public float Accuracy { get; set; }
 
         /// <summary>
         /// Count for SS ranks on maps.
