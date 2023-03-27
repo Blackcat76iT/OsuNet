@@ -1,4 +1,7 @@
 ﻿namespace OsuNet.Enums {
+    /// <summary>
+    /// Genre of music
+    /// </summary>
     public enum Genre {
         Any,
         Unspecified,
