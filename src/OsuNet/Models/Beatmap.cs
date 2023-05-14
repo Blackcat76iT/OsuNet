@@ -1,5 +1,7 @@
 ﻿using Newtonsoft.Json;
+using OsuNet;
 using OsuNet.Enums;
+using OsuNet.Models.Options;
 
 namespace OsuNet.Models {
     /// <summary>
@@ -247,14 +249,30 @@ namespace OsuNet.Models {
         /// Gets the cover URL for this Beatmap.
         /// </summary>
         /// <returns>A string representing the beatmaps cover URL</returns>
-        public string GetCover()
-            => $"https://assets.ppy.sh/beatmaps/{BeatmapSetId}/covers/cover.jpg";
+        public string GetCover() => $"https://assets.ppy.sh/beatmaps/{BeatmapSetId}/covers/cover.jpg";
 
         /// <summary>
         /// Gets the thumbnail URL for this Beatmap.
         /// </summary>
         /// <returns>A string representing the beatmaps thumbnail URL</returns>
-        public string GetThumbnail()
-            => $"https://b.ppy.sh/thumb/{BeatmapSetId}l.jpg";
+        public string GetThumbnail() => $"https://b.ppy.sh/thumb/{BeatmapSetId}l.jpg";
+
+        /// <summary>
+        /// Gets the URL of this beatmap creator.
+        /// </summary>
+        /// <returns>A string representing the URL of the map creator.</returns>
+        public string GetCreatorUrl() => $"https://osu.ppy.sh/users/{CreatorId}";
+
+        /// <summary>
+        /// Gets the URL of this beatmap creator's avatar.
+        /// </summary>
+        /// <returns>A string representing the URL of the map creator's avatar.</returns>
+        public string GetCreatorAvatar() => $"http://s.ppy.sh/a/{CreatorId}";
+
+        /// <summary>
+        /// Gets the URL of the beatmap.
+        /// </summary>
+        /// <returns>A string representing the URL of the beatmap.</returns>
+        public string GetUrl() => $"https://osu.ppy.sh/beatmapsets/{BeatmapSetId}#osu/{BeatmapId}";
     }
 }
