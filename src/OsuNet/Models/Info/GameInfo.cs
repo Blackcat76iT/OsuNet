@@ -40,7 +40,7 @@ namespace OsuNet.Models.Info {
         /// Couldn't find.
         /// </summary>
         [JsonProperty("match_type")]
-        public string MatchType { get; set; } // couldn't find
+        public string MatchType { get; set; }
 
         /// <summary>
         /// The type of evaluation in this game.
