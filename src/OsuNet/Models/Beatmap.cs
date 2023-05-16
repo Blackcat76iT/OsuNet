@@ -1,7 +1,5 @@
 ﻿using Newtonsoft.Json;
-using OsuNet;
 using OsuNet.Enums;
-using OsuNet.Models.Options;
 
 namespace OsuNet.Models {
     /// <summary>
@@ -147,14 +145,20 @@ namespace OsuNet.Models {
         public string Creator { get; set; }
 
         /// <summary>
-        /// creator ID.
+        /// Creator ID.
         /// </summary>
         [JsonProperty("creator_id")]
         public ulong CreatorId { get; set; }
 
+        /// <summary>
+        /// The BPM of this bitmap.
+        /// </summary>
         [JsonProperty("bpm")]
         public float? BPM { get; set; }
 
+        /// <summary>
+        /// * Did not find application
+        /// </summary>
         [JsonProperty("source")]
         public string Source { get; set; }
 
@@ -182,6 +186,9 @@ namespace OsuNet.Models {
         [JsonProperty("favourite_count")]
         public ulong FavouriteCount { get; set; }
 
+        /// <summary>
+        /// The number of stars of this beatmap.
+        /// </summary>
         [JsonProperty("rating")]
         public float Rating { get; set; }
 
@@ -233,9 +240,15 @@ namespace OsuNet.Models {
         [JsonProperty("max_combo")]
         public ulong? MaxCombo { get; set; }
 
+        /// <summary>
+        /// The size of the notes of this beatmap.
+        /// </summary>
         [JsonProperty("diff_aim")]
         public float? DiffAim { get; set; }
 
+        /// <summary>
+        /// The speed of the notes of this beatmap.
+        /// </summary>
         [JsonProperty("diff_speed")]
         public float? DiffSpeed { get; set; }
 
