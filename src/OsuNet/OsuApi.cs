@@ -7,10 +7,17 @@ using OsuNet.Abstractions;
 using OsuNet.Models.Options;
 
 namespace OsuNet {
-	public class OsuApi : IOsuApi {
+    /// <summary>
+    /// The main class of this library.
+    /// </summary>
+    public class OsuApi : IOsuApi {
 		public string AccessToken { get; set; }
 
-		public OsuApi(string accessToken) { 
+        /// <summary>
+        /// Gives access to methods.
+        /// </summary>
+        /// <param name="accessToken">Your token.</param>
+        public OsuApi(string accessToken) { 
 			AccessToken = accessToken;
 		}
 
