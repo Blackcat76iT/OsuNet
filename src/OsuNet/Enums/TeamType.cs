@@ -1,8 +1,8 @@
 ﻿namespace OsuNet.Enums {
-	public enum TeamType {
-		HeadtoHead,
-		Tag,
-		Team,
-		TagTeam
-	}
+    public enum TeamType {
+        HeadtoHead,
+        Tag,
+        Team,
+        TagTeam
+    }
 }
