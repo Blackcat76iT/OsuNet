@@ -80,14 +80,14 @@ namespace OsuNet {
             }.Where(kv => kv.Value != null);
         }
 
-        private Dictionary<string, string> UserBestQuery(GetUserBestOptions options) {
+        private IEnumerable<KeyValuePair<string, string>> UserBestQuery(GetUserBestOptions options) {
             return new Dictionary<string, string>() {
                 { "k", AccessToken },
                 { "u", options.User },
                 { "m", ((int?)options.Mode)?.ToString() },
                 { "limit", options.Limit?.ToString() },
                 { "type", options.Type }
-            }.Where(kv => kv.Value != null).ToDictionary(kv => kv.Key, kv => kv.Value);
+            }.Where(kv => kv.Value != null);
         }
 
         private IEnumerable<KeyValuePair<string, string>> UserRecentQuery(GetUserRecentOptions options) {
