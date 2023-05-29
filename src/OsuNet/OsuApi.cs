@@ -198,10 +198,10 @@ namespace OsuNet {
         }
 
         /// <summary>
-        /// Get the replay data of a user's score on a map.<br/>You are only allowed to do 10 requests per minute.
+        /// Get the replay data of a user's score on a beatmap.<br/>You are only allowed to do 10 requests per minute.
         /// </summary>
         /// <param name="options"></param>
-        /// <returns>Replay data of a user's score on a map.</returns>
+        /// <returns>Replay data of a user's score on a beatmap.</returns>
         [Obsolete("Use GetReplayAsync instead")]
         public Replay GetReplay(GetReplayOptions options) {
             string url = "https://osu.ppy.sh/api/get_replay";
@@ -269,10 +269,10 @@ namespace OsuNet {
         }
 
         /// <summary>
-        /// Get the replay data of a user's score on a map.<br/>You are only allowed to do 10 requests per minute.
+        /// Get the replay data of a user's score on a beatmap.<br/>You are only allowed to do 10 requests per minute.
         /// </summary>
         /// <param name="options"></param>
-        /// <returns>Replay data of a user's score on a map.</returns>
+        /// <returns>Replay data of a user's score on a beatmap.</returns>
         public async Task<Replay> GetReplayAsync(GetReplayOptions options) {
             string url = "https://osu.ppy.sh/api/get_replay";
             return await getAsync<Replay>(url, ReplayQuery(options));
