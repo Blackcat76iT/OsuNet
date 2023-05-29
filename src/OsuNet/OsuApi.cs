@@ -60,7 +60,7 @@ namespace OsuNet {
                 { "since", options.Since?.ToUniversalTime().ToString("yyyy-MM-dd HH:mm:ss") },
                 { "s", options.BeatmapSetId?.ToString() },
                 { "b", options.BeatmapId?.ToString() },
-                { "u", options.UserId?.ToString() },
+                { "u", options.User },
                 { "type", options.Type },
                 { "m", ((int?)options.Mode)?.ToString() },
                 { "a", options.ConvertedBeatmaps == true ? "1" : "0" },
