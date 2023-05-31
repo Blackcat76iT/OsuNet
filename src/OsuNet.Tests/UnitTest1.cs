@@ -45,7 +45,7 @@ namespace OsuNet.Tests {
 			Assert.IsEmpty(beatmap.Source);
 			Assert.AreEqual(beatmap.Tags, "7k drain gang rice speed stream dump stamina bladee aid be nice 2 me");
 			Assert.AreEqual(beatmap.GenreId, Genre.Unspecified);
-			Assert.AreEqual(beatmap.LanguageId, Language.unspecified);
+			Assert.AreEqual(beatmap.LanguageId, Language.Unspecified);
 			Assert.AreEqual(beatmap.FavouriteCount, 0);
 			Assert.AreEqual(beatmap.Rating, 0);
 			Assert.IsFalse(beatmap.Storyboard);
