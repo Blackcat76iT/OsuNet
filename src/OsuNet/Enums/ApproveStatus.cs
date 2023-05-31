@@ -1,6 +1,6 @@
 ﻿namespace OsuNet.Enums {
     /// <summary>
-    /// Beatmap status
+    /// Beatmap status.
     /// </summary>
     public enum ApproveStatus {
         graveyard = -2,

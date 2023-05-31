@@ -1,6 +1,6 @@
 ﻿namespace OsuNet.Enums {
     /// <summary>
-    /// Genre of music
+    /// Genre of music.
     /// </summary>
     public enum Genre {
         Any,

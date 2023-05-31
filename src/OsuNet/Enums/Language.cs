@@ -1,4 +1,7 @@
 ﻿namespace OsuNet.Enums {
+    /// <summary>
+    /// Language of song.
+    /// </summary>
     public enum Language {
         Any,
         Unspecified,
