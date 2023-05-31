@@ -109,7 +109,7 @@ namespace OsuNet.Models {
         public DateTime? ApprovedDate { get; set; }
 
         /// <summary>
-        /// Last update date, in UTC. May be after approved_date if map was unranked and reranked.
+        /// Last update date, in UTC.<br/>May be after approved_date if map was unranked and reranked.
         /// </summary>
         [JsonProperty("last_update")]
         public DateTime? LastUpdate { get; set; }

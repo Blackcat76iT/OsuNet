@@ -2,8 +2,7 @@
 
 namespace OsuNet.Models {
     /// <summary>
-    /// Get the replay data of a user's score on a map.
-    /// You are only allowed to do 10 requests per minute.
+    /// Get the replay data of a user's score on a map.<br/>You are only allowed to do 10 requests per minute.
     /// </summary>
     public class Replay {
         /// <summary>
