@@ -6,6 +6,7 @@ namespace OsuNet.Models.Info {
     /// </summary>
     public class MatchInfo {
         public static explicit operator MatchInfo(long v) => new MatchInfo();
+
         /// <summary>
         /// The unique ID of the match.
         /// </summary>

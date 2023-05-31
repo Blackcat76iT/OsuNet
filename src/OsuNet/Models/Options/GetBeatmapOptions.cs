@@ -5,7 +5,11 @@ namespace OsuNet.Models.Options {
         public DateTime? Since { get; set; }
         public ulong? BeatmapSetId { get; set; }
         public ulong? BeatmapId { get; set; }
-        public ulong? UserId { get; set; }
+
+        /// <summary>
+        /// Beatmap creator.
+        /// </summary>
+        public string User { get; set; }
         public string Type { get; set; }
         public BeatmapMode? Mode { get; set; }
         public bool? ConvertedBeatmaps { get; set; }

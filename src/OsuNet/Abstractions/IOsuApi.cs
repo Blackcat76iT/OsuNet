@@ -6,18 +6,18 @@ namespace OsuNet.Abstractions {
         string AccessToken { get; set; }
 
         Beatmap[] GetBeatmap(GetBeatmapOptions options);
-        Task<Beatmap[]> GetBeatmapAsync(GetBeatmapOptions options);
         User[] GetUser(GetUserOptions options);
-        Task<User[]> GetUserAsync(GetUserOptions options);
-        Scores[] GetScore(GetScoresOptions options);
-        Task<Scores[]> GetScoreAsync(GetScoresOptions options);
         UserBest[] GetUserBest(GetUserBestOptions options);
-        Task<UserBest[]> GetUserBestAsync(GetUserBestOptions options);
         UserRecent[] GetUserRecent(GetUserRecentOptions options);
-        Task<UserRecent[]> GetUserRecentAsync(GetUserRecentOptions options);
+        Scores[] GetScores(GetScoresOptions options);
         Multiplayer GetMultiplayer(GetMultiplayerOptions options);
-        Task<Multiplayer> GetMultiplayerAsync(GetMultiplayerOptions options);
         Replay GetReplay(GetReplayOptions options);
+        Task<Beatmap[]> GetBeatmapAsync(GetBeatmapOptions options);
+        Task<User[]> GetUserAsync(GetUserOptions options);
+        Task<UserBest[]> GetUserBestAsync(GetUserBestOptions options);
+        Task<UserRecent[]> GetUserRecentAsync(GetUserRecentOptions options);
+        Task<Scores[]> GetScoresAsync(GetScoresOptions options);
+        Task<Multiplayer> GetMultiplayerAsync(GetMultiplayerOptions options);
         Task<Replay> GetReplayAsync(GetReplayOptions options);
     }
 }

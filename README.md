@@ -19,12 +19,14 @@ using OsuNet.Models.Options;
 public class Program {
     private static readonly OsuApi api = new OsuApi("Your Token");
 
-    static void Main(string[] args) {
-        Console.WriteLine(GetBeatmapAsync(3713514).Title);
-        Console.WriteLine(GetBeatmapAsync(3713514).GetThumbnail()) // Returns a reference to the thumbnail beatmap
+    static async void Main(string[] args) {
+        Beatmap beatmap = await GetBeatmapAsync(3713514);
+
+        Console.WriteLine(beatmap.Title);
+        Console.WriteLine(beatmap.GetThumbnail()); // Returns a reference to the thumbnail beatmap.
     }
 
-    public static Beatmap GetBeatmapAsync(ulong id) {
+    public static async Task<Beatmap> GetBeatmapAsync(ulong id) {
         Beatmap beatmap = (await api.GetBeatmapAsync(new GetBeatmapOptions() {
             BeatmapId = id
         })).FirstOrDefault();

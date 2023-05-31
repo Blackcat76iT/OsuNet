@@ -1,4 +1,7 @@
 ﻿namespace OsuNet.Enums {
+    /// <summary>
+    /// Mods that have been used.
+    /// </summary>
     [Flags]
     public enum Mods {
         None = 0,

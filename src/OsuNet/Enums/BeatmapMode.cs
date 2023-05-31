@@ -1,6 +1,6 @@
 ﻿namespace OsuNet.Enums {
     /// <summary>
-    /// Game mode
+    /// Game mode.
     /// </summary>
     [Flags]
     public enum BeatmapMode {

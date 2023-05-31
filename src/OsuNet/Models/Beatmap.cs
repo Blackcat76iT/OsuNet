@@ -109,7 +109,7 @@ namespace OsuNet.Models {
         public DateTime? ApprovedDate { get; set; }
 
         /// <summary>
-        /// Last update date, in UTC. May be after approved_date if map was unranked and reranked.
+        /// Last update date, in UTC.<br/>May be after approved_date if map was unranked and reranked.
         /// </summary>
         [JsonProperty("last_update")]
         public DateTime? LastUpdate { get; set; }
@@ -145,14 +145,20 @@ namespace OsuNet.Models {
         public string Creator { get; set; }
 
         /// <summary>
-        /// creator ID.
+        /// Creator ID.
         /// </summary>
         [JsonProperty("creator_id")]
         public ulong CreatorId { get; set; }
 
+        /// <summary>
+        /// The BPM of this bitmap.
+        /// </summary>
         [JsonProperty("bpm")]
         public float? BPM { get; set; }
 
+        /// <summary>
+        /// * Did not find application
+        /// </summary>
         [JsonProperty("source")]
         public string Source { get; set; }
 
@@ -180,6 +186,9 @@ namespace OsuNet.Models {
         [JsonProperty("favourite_count")]
         public ulong FavouriteCount { get; set; }
 
+        /// <summary>
+        /// The number of stars of this beatmap.
+        /// </summary>
         [JsonProperty("rating")]
         public float Rating { get; set; }
 
@@ -231,9 +240,15 @@ namespace OsuNet.Models {
         [JsonProperty("max_combo")]
         public ulong? MaxCombo { get; set; }
 
+        /// <summary>
+        /// The size of the notes of this beatmap.
+        /// </summary>
         [JsonProperty("diff_aim")]
         public float? DiffAim { get; set; }
 
+        /// <summary>
+        /// The speed of the notes of this beatmap.
+        /// </summary>
         [JsonProperty("diff_speed")]
         public float? DiffSpeed { get; set; }
 
@@ -247,14 +262,30 @@ namespace OsuNet.Models {
         /// Gets the cover URL for this Beatmap.
         /// </summary>
         /// <returns>A string representing the beatmaps cover URL</returns>
-        public string GetCover()
-            => $"https://assets.ppy.sh/beatmaps/{BeatmapSetId}/covers/cover.jpg";
+        public string GetCover() => $"https://assets.ppy.sh/beatmaps/{BeatmapSetId}/covers/cover.jpg";
 
         /// <summary>
         /// Gets the thumbnail URL for this Beatmap.
         /// </summary>
         /// <returns>A string representing the beatmaps thumbnail URL</returns>
-        public string GetThumbnail()
-            => $"https://b.ppy.sh/thumb/{BeatmapSetId}l.jpg";
+        public string GetThumbnail() => $"https://b.ppy.sh/thumb/{BeatmapSetId}l.jpg";
+
+        /// <summary>
+        /// Gets the URL of this beatmap creator.
+        /// </summary>
+        /// <returns>A string representing the URL of the map creator.</returns>
+        public string GetCreatorUrl() => $"https://osu.ppy.sh/users/{CreatorId}";
+
+        /// <summary>
+        /// Gets the URL of this beatmap creator's avatar.
+        /// </summary>
+        /// <returns>A string representing the URL of the map creator's avatar.</returns>
+        public string GetCreatorAvatar() => $"http://s.ppy.sh/a/{CreatorId}";
+
+        /// <summary>
+        /// Gets the URL of the beatmap.
+        /// </summary>
+        /// <returns>A string representing the URL of the beatmap.</returns>
+        public string GetUrl() => $"https://osu.ppy.sh/beatmapsets/{BeatmapSetId}#osu/{BeatmapId}";
     }
 }
