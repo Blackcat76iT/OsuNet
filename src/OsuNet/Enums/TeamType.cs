@@ -3,7 +3,7 @@
     /// Type of game.
     /// </summary>
     public enum TeamType {
-        HeadtoHead,
+        HeadToHead,
         Tag,
         Team,
         TagTeam

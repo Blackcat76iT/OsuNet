@@ -16,6 +16,6 @@
         Metal,
         Classical,
         Folk,
-        Jazz,
+        Jazz
     }
 }

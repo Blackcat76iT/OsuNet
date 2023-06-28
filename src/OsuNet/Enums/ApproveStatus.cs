@@ -3,7 +3,7 @@
     /// Beatmap status.
     /// </summary>
     public enum ApproveStatus {
-        graveyard = -2,
+        Graveyard = -2,
         WIP,
         Pending,
         Ranked,
