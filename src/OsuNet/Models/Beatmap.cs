@@ -286,6 +286,6 @@ namespace OsuNet.Models {
         /// Gets the URL of the beatmap.
         /// </summary>
         /// <returns>A string representing the URL of the beatmap.</returns>
-        public string GetUrl() => $"https://osu.ppy.sh/beatmapsets/{BeatmapSetId}#osu/{BeatmapId}";
+        public string GetUrl() => $"https://osu.ppy.sh/beatmapsets/{BeatmapSetId}#{Mode.ToString().ToLower()}/{BeatmapId}";
     }
 }
