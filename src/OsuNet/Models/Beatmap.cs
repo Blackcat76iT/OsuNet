@@ -31,7 +31,7 @@ namespace OsuNet.Models {
         public ulong TotalLength { get; set; }
 
         /// <summary>
-        /// Seconds from first note to last note not including breaks.
+        /// Seconds from first note to last note<br/>Not including breaks.
         /// </summary>
         [JsonProperty("hit_length")]
         public ulong HitLength { get; set; }
