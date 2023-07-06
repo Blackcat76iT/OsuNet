@@ -1,5 +1,5 @@
 # OsuNet
-OsuNet is a library for the [Osu!API v1](https://github.com/ppy/osu-api/wiki)
+OsuNet is a library for the [Osu!API v1](https://github.com/ppy/osu-api/wiki)  
 Documentation for this library: [link](https://github.com/Blackcat76iT/OsuNet/wiki)
 
 ## Installation
