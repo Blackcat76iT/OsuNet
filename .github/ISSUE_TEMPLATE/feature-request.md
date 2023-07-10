@@ -1,6 +1,6 @@
 ---
-name: Feature
-about: suggest improvements in the code
+name: Enhancement
+about: New feature or request
 title: ''
 labels: enhancement
 assignees: 'Blackcat76iT'
