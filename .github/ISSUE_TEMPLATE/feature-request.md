@@ -1,9 +1,9 @@
 ---
-name: Фича
-about: Предложить фичу
+name: Feature
+about: suggest code or documentation improvements
 title: ''
 labels: enhancement
-assignees: ''
+assignees: 'Blackcat76iT'
 
 ---
 
