@@ -6,7 +6,7 @@
     public enum BeatmapMode {
         Osu,
         Taiko,
-        CtB,
-        OsuMania
+        Catch,
+        Mania
     }
 }

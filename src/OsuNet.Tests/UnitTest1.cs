@@ -28,7 +28,7 @@ namespace OsuNet.Tests {
 			Assert.AreEqual(beatmap.DiffOverall, 6);
 			Assert.AreEqual(beatmap.DiffApproach, 5);
 			Assert.AreEqual(beatmap.DiffDrain, 6.9f);
-			Assert.AreEqual(beatmap.Mode, BeatmapMode.OsuMania);
+			Assert.AreEqual(beatmap.Mode, BeatmapMode.Mania);
 			Assert.AreEqual(beatmap.CountNormal, 2434);
 			Assert.AreEqual(beatmap.CountSlider, 215);
 			Assert.AreEqual(beatmap.CountSpinner, 0);
@@ -178,10 +178,10 @@ namespace OsuNet.Tests {
 			Assert.AreEqual(multiplayer.Games[0].PlayMode, BeatmapMode.Osu);
 			Assert.AreEqual(multiplayer.Games[0].MatchType, "0");
 			Assert.AreEqual(multiplayer.Games[0].ScoringType, Scoring.Score);
-			Assert.AreEqual(multiplayer.Games[0].TeamType, TeamType.HeadtoHead);
+			Assert.AreEqual(multiplayer.Games[0].TeamType, TeamType.HeadToHead);
 			Assert.AreEqual(multiplayer.Games[0].Mods, Mods.None);
 			Assert.AreEqual(multiplayer.Games[0].Scores[0].Slot, 0);
-			Assert.AreEqual(multiplayer.Games[0].Scores[0].Team, Team.unsupported);
+			Assert.AreEqual(multiplayer.Games[0].Scores[0].Team, Team.Unsupported);
 			Assert.AreEqual(multiplayer.Games[0].Scores[0].UserId, 13141010);
 			Assert.AreEqual(multiplayer.Games[0].Scores[0].Score, 640660);
 			Assert.AreEqual(multiplayer.Games[0].Scores[0].MaxCombo, 146);
