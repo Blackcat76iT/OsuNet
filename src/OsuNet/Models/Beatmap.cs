@@ -31,7 +31,7 @@ namespace OsuNet.Models {
         public ulong TotalLength { get; set; }
 
         /// <summary>
-        /// Seconds from first note to last note not including breaks.
+        /// Seconds from first note to last note<br/>Not including breaks.
         /// </summary>
         [JsonProperty("hit_length")]
         public ulong HitLength { get; set; }
@@ -286,6 +286,6 @@ namespace OsuNet.Models {
         /// Gets the URL of the beatmap.
         /// </summary>
         /// <returns>A string representing the URL of the beatmap.</returns>
-        public string GetUrl() => $"https://osu.ppy.sh/beatmapsets/{BeatmapSetId}#osu/{BeatmapId}";
+        public string GetUrl() => $"https://osu.ppy.sh/beatmapsets/{BeatmapSetId}#{Mode.ToString().ToLower()}/{BeatmapId}";
     }
 }
