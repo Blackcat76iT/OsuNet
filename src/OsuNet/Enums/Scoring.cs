@@ -2,7 +2,7 @@
     /// <summary>
     /// How is multiplayer game rated.
     /// </summary>
-    public enum Scoring {
+    public enum Scoring : byte{
         Score,
         Accuracy,
         Combo,

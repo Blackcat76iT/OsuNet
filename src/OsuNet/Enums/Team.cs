@@ -2,7 +2,7 @@
     /// <summary>
     /// Which team did the player belong to.
     /// </summary>
-    public enum Team {
+    public enum Team : byte{
         Unsupported,
         Blue,
         Red

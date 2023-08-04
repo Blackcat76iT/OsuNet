@@ -2,7 +2,7 @@
     /// <summary>
     /// Genre of music.
     /// </summary>
-    public enum Genre {
+    public enum Genre : byte {
         Any,
         Unspecified,
         Videogame,

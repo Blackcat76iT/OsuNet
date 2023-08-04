@@ -3,7 +3,7 @@
     /// Game mode.
     /// </summary>
     [Flags]
-    public enum BeatmapMode {
+    public enum BeatmapMode : byte {
         Osu,
         Taiko,
         Catch,

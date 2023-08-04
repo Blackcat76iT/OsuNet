@@ -45,11 +45,12 @@ namespace OsuNet {
         }
 
         private async Task<T> getAsync<T>(string url, IEnumerable<KeyValuePair<string, string>> query) {
-            HttpClient client = new HttpClient();
-            using (HttpResponseMessage response = await client.GetAsync($"{url}?{string.Join("&", query.Select(kv => $"{kv.Key}={HttpUtility.UrlEncode(kv.Value)}"))}")) {
-                response.EnsureSuccessStatusCode();
-                using (Stream stream = await response.Content.ReadAsStreamAsync()) {
-                    return fromJson<T>(stream);
+            using (HttpClient client = new HttpClient()) {
+                using (HttpResponseMessage response = await client.GetAsync($"{url}?{string.Join("&", query.Select(kv => $"{kv.Key}={HttpUtility.UrlEncode(kv.Value)}"))}")) {
+                    response.EnsureSuccessStatusCode();
+                    using (Stream stream = await response.Content.ReadAsStreamAsync()) {
+                        return fromJson<T>(stream);
+                    }
                 }
             }
         }
@@ -62,7 +63,7 @@ namespace OsuNet {
                 { "b", options.BeatmapId?.ToString() },
                 { "u", options.User },
                 { "type", options.Type },
-                { "m", ((int?)options.Mode)?.ToString() },
+                { "m", ((byte?)options.Mode)?.ToString() },
                 { "a", options.ConvertedBeatmaps == true ? "1" : "0" },
                 { "h", options.Hash },
                 { "limit", options.Limit?.ToString() },
@@ -74,7 +75,7 @@ namespace OsuNet {
             return new Dictionary<string, string>() {
                 { "k", AccessToken },
                 { "u", options.User.ToString() },
-                { "m", ((int)options.Mode).ToString() },
+                { "m", ((byte)options.Mode).ToString() },
                 { "type", options.Type },
                 { "event_days", options.EventDays?.ToString() }
             }.Where(kv => kv.Value != null);
@@ -84,7 +85,7 @@ namespace OsuNet {
             return new Dictionary<string, string>() {
                 { "k", AccessToken },
                 { "u", options.User },
-                { "m", ((int?)options.Mode)?.ToString() },
+                { "m", ((byte?)options.Mode)?.ToString() },
                 { "limit", options.Limit?.ToString() },
                 { "type", options.Type }
             }.Where(kv => kv.Value != null);
@@ -94,7 +95,7 @@ namespace OsuNet {
             return new Dictionary<string, string>() {
                 { "k", AccessToken },
                 { "u", options.User },
-                { "m", ((int?)options.Mode)?.ToString() },
+                { "m", ((byte?)options.Mode)?.ToString() },
                 { "limit", options.Limit?.ToString() },
                 { "type", options.Type}
             }.Where(kv => kv.Value != null);
@@ -105,7 +106,7 @@ namespace OsuNet {
                 { "k", AccessToken },
                 { "b", options.BeatmapId?.ToString() },
                 { "u", options.User },
-                { "m", ((int)options.Mode).ToString() },
+                { "m", ((byte)options.Mode).ToString() },
                 { "mods", options.Mods?.ToString() },
                 { "type", options.Type},
                 { "limit", options.Limit?.ToString() }
@@ -124,7 +125,7 @@ namespace OsuNet {
                 { "k", AccessToken },
                 { "b", options.BeatmapId.ToString() },
                 { "u", options.User },
-                { "m", ((int?)options.Mode)?.ToString() },
+                { "m", ((byte?)options.Mode)?.ToString() },
                 { "s", options.ScoreId },
                 { "type", options.Type },
                 { "mods", ((int?)options.Mods)?.ToString() }

@@ -2,7 +2,7 @@
     /// <summary>
     /// Language of song.
     /// </summary>
-    public enum Language {
+    public enum Language : byte {
         Any,
         Unspecified,
         English,

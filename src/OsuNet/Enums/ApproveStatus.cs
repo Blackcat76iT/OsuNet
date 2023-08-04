@@ -2,7 +2,7 @@
     /// <summary>
     /// Beatmap status.
     /// </summary>
-    public enum ApproveStatus {
+    public enum ApproveStatus : sbyte {
         Graveyard = -2,
         WIP,
         Pending,
